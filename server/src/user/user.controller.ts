@@ -1,8 +1,8 @@
 import { Controller, UseGuards } from '@nestjs/common';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from 'src/common/auth.guard';
 
 @Controller('user')
-//@UseGuards(AuthGuard)
+@UseGuards(AuthGuard)
 export class UserController {
   // User CRUD and feature APIs
 }
